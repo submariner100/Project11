@@ -151,7 +151,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     if editingMode {
                          let size = CGSize(width: GKRandomDistribution(lowestValue: 16, highestValue: 128).nextInt(), height: 16)
                          let box = SKSpriteNode(color: RandomColor(), size: size)
-                         box.zPosition = RandomCGFloat(min: 0, max: 3)
+                         box.zRotation = RandomCGFloat(min: 0, max: 3)
                          box.position = location
                          
                          box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
